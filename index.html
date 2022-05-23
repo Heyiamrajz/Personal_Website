@@ -7,6 +7,9 @@
     <title>Portfolio | Rajesh Dhakal</title>
     <link rel="stylesheet" href="Style.css">
 </head>
+    <div id="preloader">
+        
+    </div>
 <body>
     <header>
         <img src="Images/Personalimage.jpg" alt="My Image" >
@@ -31,6 +34,12 @@
         <div class="footer-bottom">
             <P>Copyright &copy;2022 Rajz | Designed by <span>Rajesh Dhakal</span></P>
         </div>
-    </footer>    
+    </footer> 
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListner("load", function(){
+            loader.style.display ="none";
+        })
+    </script>
 </body>
 </html>
