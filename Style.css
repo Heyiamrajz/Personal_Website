@@ -4,16 +4,15 @@
   box-sizing: border-box;
   
 }
-#preloader {
-  background: #000 url(Images/preloader.gif) no-repeat center center;
+ #preloader {
+  background: url(Images/preloader.gif) no-repeat center center;
   background-size:30%;
-  
-height: 100vh;
-width: 100%;
+  height: 100vh;
+  width: 100%;
   position: fixed;
   z-index:100%;
   
-}  
+} 
 
 body{
     background-color: rgb(21, 45, 28);
