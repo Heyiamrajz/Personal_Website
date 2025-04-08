@@ -2,29 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
- #preloader {
+
+#preloader {
   background: url(Images/preloader.gif) no-repeat center center;
-  background-size:30%;
+  background-size: 30%;
   height: 100vh;
   width: 100%;
   position: fixed;
-  z-index:100%;
-  
-} 
+  z-index: 100%;
+}
 
-body{
-    background-color: rgb(21, 45, 28);
+body {
+  background: linear-gradient(to bottom right, #1a3d2a, #283d3a);
 }
 
 img {
-position: relative;
-  width: 100%;
-  max-width: fit-content;
-  height: 100%;
-  max-height: fit-content;
-  background-size: cover;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .indextextalignment {
@@ -37,36 +34,32 @@ position: relative;
   font-weight: bolder;
   word-spacing: 3px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 main {
-background: rgb(221, 28, 28);
- display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-text-align: center;
-  
+  background: rgb(221, 28, 28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-main p{
-max-width: 900px;
-margin: 10px auto;
-line-height: 20px;
-font-size: 16px;
-color: #fff;
-
+main p {
+  max-width: 900px;
+  margin: 10px auto;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #fff;
 }
 
 footer {
   position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  min-height: 100px;
   background: rgb(221, 28, 28);
-  height: auto;
-  width: 100vw;
-  font-family: "open sans";
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
   padding-top: 40px;
   color: #fff;
 }
@@ -82,15 +75,16 @@ footer {
 .footer-content p {
   max-width: 500px;
   margin: 10px auto;
-  line-height: 20px;
-  font-size: 16px;
+  line-height: 1.5;
+  font-size: 1rem;
 }
-.footer-content H2 {
-    max-width: 500px;
-    margin: 30px auto;
-    font-size: 25px;
-    text-transform: capitalize;
-  }
+
+.footer-content h2 {
+  max-width: 500px;
+  margin: 30px auto;
+  font-size: 25px;
+  text-transform: capitalize;
+}
 
 .socials {
   list-style: none;
@@ -104,12 +98,16 @@ footer {
   margin: 10px;
 }
 
+li img {
+  transition: transform 0.3s ease-in-out;
+}
+
 li img:hover {
   transform: scale(1.2);
 }
 
 .footer-bottom {
-  background: #000;
+  background: linear-gradient(135deg, #000, #434343);
   width: 100%;
   padding: 10px 0;
   text-align: center;
